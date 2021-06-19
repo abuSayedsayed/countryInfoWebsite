@@ -1,0 +1,83 @@
+.preloader{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:#FFFFFF;
+  opacity: 1;
+  transition:  opacity .4s ease-out ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+body{
+  pointer-events: none;
+}
+.hide-preloader{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.animation-container{
+  display: flex;
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+
+}
+.circle1,.circle2{
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+.circle1{
+background-color: #22152b;
+animation: scale 2s linear infinite;
+}
+.circle2{
+background-color: #eb2646;
+animation: scale2 2s linear infinite;
+
+}
+
+@keyframes rotate{
+  100%{
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes scale{
+  0%{
+      width: 10%;
+      height: 10%;
+  }
+  50%{
+      width: 30%;
+      height: 30%;
+    
+  }
+  100%{
+      width: 10%;
+      height: 10%;
+  }
+}
+@keyframes scale2{
+  0%{
+      width: 30%;
+      height: 30%;
+  }
+  50%{
+      width: 10%;
+      height: 10%;
+  }
+  100%{
+      width: 30%;
+      height: 30%;
+  }
+}

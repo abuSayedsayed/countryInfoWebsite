@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>explore | country</title>
+   <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+   <link rel="stylesheet" href="res/chartist.min.css">
+   <!--bootstrap icon-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="s=ha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./preloader/preloader.css">
+   <link rel="stylesheet" href="css/initial.css" type="text/css" media="all" />
+</head>
+
+<body>
+   <!--preloder section starts-->
+   <div class="preloader">
+      <div class="animation-container">
+         <div class="circle1"></div>
+         <div class="circle2"></div>
+      </div>
+   </div>
+   <!--preloder section ends-->
+   <!-- I need a navbar at first -->
+   <!--navbar starts -->
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid px-3 px-md-5">
+         <a href="./index.html" class="navbar-brand">
+            <span class="text-info font-weight-bold">EXPLORE</span>COUNTRY
+         </a>
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a href="./index.html" class="nav-link">HOME</a>
+               </li>
+               <!--the drop down menu for india-->
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                     INDIA
+                  </a>
+                  <ul class="dropdown-menu bg-secondary text-md-left text-center" aria-labelledby="navbarDropdown">
+                     <li>
+                        <a href="./india/general.html" class="dropdown-item">GENERAL</a>
+                     </li>
+                     <li>
+                        <a href="./india/helth.html" class="dropdown-item">HELTH</a>
+                     </li>
+                     <li>
+                        <a href="./india/entertainment.html" class="dropdown-item">ENTERTAINMENT</a>
+                     </li>
+                     <li>
+                        <a href="./india/business.html" class="dropdown-item">BUSINESS</a>
+                     </li>
+                     <li>
+                        <a href="./india/technology.html" class="dropdown-item">TECHNOLOGY</a>
+                     </li>
+                     <li>
+                        <a href="./india/science.html" class="dropdown-item">SCIENCE</a>
+                     </li>
+                     <li>
+                        <a href="./india/sports.html" class="dropdown-item">SPORTS</a>
+                     </li>
+                  </ul>
+                  <!--the dropdown for usa-->
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                     USA
+                  </a>
+                  <ul class="dropdown-menu bg-secondary text-md-left text-center" aria-labelledby="navbarDropdown">
+                     <li>
+                        <a href="./us/general.html" class="dropdown-item">GENERAL</a>
+                     </li>
+                     <li>
+                        <a href="./us/helth.html" class="dropdown-item">HELTH</a>
+                     </li>
+                     <li>
+                        <a href="./us/entertainment.html" class="dropdown-item">ENTERTAINMENT</a>
+                     </li>
+                     <li>
+                        <a href="./us/business.html" class="dropdown-item">BUSINESS</a>
+                     </li>
+                     <li>
+                        <a href="./us/technology.html" class="dropdown-item">TECHNOLOGY</a>
+                     </li>
+                     <li>
+                        <a href="./us/science.html" class="dropdown-item">SCIENCE</a>
+                     </li>
+                     <li>
+                        <a href="./us/sports.html" class="dropdown-item">SPORTS</a>
+                     </li>
+                  </ul>
+                  <!--this dropdown for UK-->
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                     UK
+                  </a>
+                  <ul class="dropdown-menu bg-secondary text-md-left text-center" aria-labelledby="navbarDropdown">
+                     <li>
+                        <a href="./uk/general.html" class="dropdown-item">GENERAL</a>
+                     </li>
+                     <li>
+                        <a href="./uk/helth.html" class="dropdown-item">HELTH</a>
+                     </li>
+                     <li>
+                        <a href="./uk/entertainment.html" class="dropdown-item">ENTERTAINMENT</a>
+                     </li>
+                     <li>
+                        <a href="./uk/business.html" class="dropdown-item">BUSINESS</a>
+                     </li>
+                     <li>
+                        <a href="./uk/technology.html" class="dropdown-item">TECHNOLOGY</a>
+                     </li>
+                     <li>
+                        <a href="./uk/science.html" class="dropdown-item">SCIENCE</a>
+                     </li>
+                     <li>
+                        <a href="./uk/sports.html" class="dropdown-item">SPORTS</a>
+                     </li>
+                  </ul>
+                  <!--this drop down for australia-->
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                     AUSTRALIA
+                  </a>
+                  <ul class="dropdown-menu bg-secondary text-md-left text-center" aria-labelledby="navbarDropdown">
+                     <li>
+                        <a href="./au/general.html" class="dropdown-item">GENERAL</a>
+                     </li>
+                     <li>
+                        <a href="./au/helth.html" class="dropdown-item">HELTH</a>
+                     </li>
+                     <li>
+                        <a href="./au/entertainment.html" class="dropdown-item">ENTERTAINMENT</a>
+                     </li>
+                     <li>
+                        <a href="./au/business.html" class="dropdown-item">BUSINESS</a>
+                     </li>
+                     <li>
+                        <a href="./au/technology.html" class="dropdown-item">TECHNOLOGY</a>
+                     </li>
+                     <li>
+                        <a href="./au/science.html" class="dropdown-item">SCIENCE</a>
+                     </li>
+                     <li>
+                        <a href="./au/sports.html" class="dropdown-item">SPORTS</a>
+                     </li>
+                  </ul>
+                  <!--the dropdown for russia-->
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                     RUSSIA
+                  </a>
+                  <ul class="dropdown-menu bg-secondary text-md-left text-center" aria-labelledby="navbarDropdown">
+                     <li>
+                        <a href="./ru/general.html" class="dropdown-item">GENERAL</a>
+                     </li>
+                     <li>
+                        <a href="./ru/helth.html" class="dropdown-item">HELTH</a>
+                     </li>
+                     <li>
+                        <a href="./ru/entertainment.html" class="dropdown-item">ENTERTAINMENT</a>
+                     </li>
+                     <li>
+                        <a href="./ru/business.html" class="dropdown-item">BUSINESS</a>
+                     </li>
+                     <li>
+                        <a href="./ru/technology.html" class="dropdown-item">TECHNOLOGY</a>
+                     </li>
+                     <li>
+                        <a href="./ru/science.html" class="dropdown-item">SCIENCE</a>
+                     </li>
+                     <li>
+                        <a href="./ru/sports.html" class="dropdown-item">SPORTS</a>
+                     </li>
+                  </ul>
+                  <!--this drop down for  france -->
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                     FRANCE
+                  </a>
+                  <ul class="dropdown-menu bg-secondary text-md-left text-center" aria-labelledby="navbarDropdown">
+                     <li>
+                        <a href="./fr/general.html" class="dropdown-item">GENERAL</a>
+                     </li>
+                     <li>
+                        <a href="./fr/helth.html" class="dropdown-item">HELTH</a>
+                     </li>
+                     <li>
+                        <a href="./fr/entertainment.html" class="dropdown-item">ENTERTAINMENT</a>
+                     </li>
+                     <li>
+                        <a href="./fr/business.html" class="dropdown-item">BUSINESS</a>
+                     </li>
+                     <li>
+                        <a href="./fr/technology.html" class="dropdown-item">TECHNOLOGY</a>
+                     </li>
+                     <li>
+                        <a href="./fr/science.html" class="dropdown-item">SCIENCE</a>
+                     </li>
+                     <li>
+                        <a href="./fr/sports.html" class="dropdown-item">SPORTS</a>
+                     </li>
+                  </ul>
+                  <!--dropdaown ends here-->
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!--navbar ends -->
+   <!--the slider ihave added to display the data of multiple countries-->
+   <section id="slider">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner" id="carousel-inner">
+            <div class="carousel-item active">
+               <div class="item-gradient"></div>
+               <img class="img-fluid" src="https://source.unsplash.com/600x300/?bangladesh,history" alt="BD IMAGE">
+               <!---<img class="img-fluid" src="imgs/images_01.jpg" alt="" />--->
+               <div class="carousel-caption px-3 px-md-5">
+                  <h1 class="caption-title">BANGLADESH</h1>
+                  <div class="country-meta my-3 my-md-4">
+                     <div class="d-flex justify-content-between align-items-center country-info my-2 area-text">
+                        <div class="h4">
+                           CAPITAL : <span>DHAKA</span>
+                        </div>
+                        <div class="h4">
+                           POPULATION : <span>16000000 Core.</span>
+                        </div>
+                     </div>
+                     <div class="d-flex justify-content-between align-items-center country-info my-2 area-text">
+                        <div class="h4">
+                           AREA : <span>147570 Sq.km</span>
+                        </div>
+                        <div class="h4">
+                           REGION : <span> Southern Asia/Asia .
+                           </span>
+                        </div>
+                     </div>
+                     <div class="my-3 my-md-4">
+                        <button class="know-more" onclick="location.href='#bangladesh';">KNOW MORE<span></span></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--carousel item ends here--->
+         </div>
+      </div>
+   </section>
+   <!--slider section ends here-->
+   <!--more about different country -->
+   <!-- more about country starts here-->
+   <section id="more-about-countries" class=" py-3 py-md-5 ">
+      <h2 class="text-center pb-4 font-weight-bold explore-heading">
+         LET'S EXPLORE MORE !
+      </h2>
+      <!--row refers a single country info-->
+      <div class=" py-md-3 py-2 single-country ">
+         <div class="container">
+            <div id="country-more-info-container">
+               <div class="loader-bg">
+                  <div class="d-flex justify-content-center align-items-center py-md-5 py-3 my-md-5 my-3 mini-loader">
+                     <img class="img-fluid " src="imgs/Fading ventilation.gif" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- more about country ends here-->
+   <!--footer section starts here--->
+   <footer class=" footer bg-dark py-3 py-md-5" id="footer">
+      <div class="container">
+         <div class="row text-light">
+            <div class="col-md-6 my-md-0 my-3">
+               <h4 class="footer-heading">
+                  ABOUT ME
+               </h4>
+               <p class="my-2 about-paragraph text-justify">
+                  I am a very simple boy.I have created this website just with my smart (I am not sure about it smartness . Because it doesn't support keybord or mouse) Phone.I love programming . I found a lot of fun here.
+                  Please pray for for me so that I can be a good programmer !
+               </p>
+               <div class="d-flex justify-content-start align-items-center my-2">
+                  <div class="icon">
+                     <a href="https://m.facebook.com/profile.php?ref=bookmarks"><i class="fab fa-facebook-f"></i></div></a>
+                  <div class="icon"><i class="fab fa-twitter"></i></div>
+                  <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                  <div class="icon"><i class="fab fa-github"></i></div>
+               </div>
+            </div>
+            <div class="col-md-3 my-md-0 my-3">
+               <h4 class="footer-heading">
+                  QUICK LINKS
+               </h4>
+               <ul class="links">
+                  <li class="link"><a href="/">Home</a></li>
+                  <li class="link"><a href="/">Privacy Policy</a></li>
+                  <li class="link"><a href="/">Terms And Conditions</a></li>
+                  <li class="link"><a href="/">Help</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3 my-md-0 my-3">
+               <h4 class="footer-heading">CONTACT ME</h4>
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="">
+                     <p class="">In Space . Mars 5069.</p>
+                  </div>
+               </div>
+               <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="icon"><i class="fa fa-envelope"></i></div>
+                  <div class="">
+                     <p class="">marsiman@mars.com</p>
+                  </div>
+               </div>
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="icon"><i class="fa fa-phone"></i></div>
+                  <div class="">
+                     <p class="mb-1">$8890748865666</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright-section text-center my-2">Copyright &copy; 2021 .<a href="#" class="link">Abu Sayed </a> All rights reserved .
+      </div>
+   </footer>
+   <!--footer section ends here--->
+   <!--bootstrap's javascript cdn link-->
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+   <script src="./preloader/preloader.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js/slider.js" type="module" charset="utf-8"></script>
+   <script src="js/home.js" type="module" charset="utf-8"></script>
+</body>
+
+</html>
