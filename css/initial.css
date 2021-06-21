@@ -151,7 +151,6 @@ h1:select {
 
 .country-info {
    width: 100%;
-   scroll-padding: 5rem 0rem;
 
 }
 
@@ -159,7 +158,6 @@ h1:select {
    font-size: 1.5rem;
    color: #d4c3c3;
    color: #fc8047;
-
    font-weight: 700;
 
 }
@@ -215,18 +213,14 @@ h1:select {
 
 .single-country {
    background: #22152b;
+   overflow: hidden;
 
 
 }
 
 #more-about-countries {
-   background-image: linear-gradient(90deg, #22152B, 70%, #33254e) !important;
 
 }
-table{
-   overflow: hidden;
-}
-
 .explore-heading {
    font-size: 3rem;
    color: #eb2646;
@@ -239,7 +233,7 @@ table{
 }
 
 .country-more-info {
-   width: 100%;
+   overflow: scroll;
 }
 
 
@@ -427,11 +421,18 @@ td:nth-child(even) {
    .country-name {
       font-size: 1.2rem;
    }
+   tr{
+      width: 100%;
+   }
 
    td {
       font-size: .6rem;
+      width: 15%!important;
    }
-
+   td:last-child{
+      font-size: .6rem;
+      width: 15% !important;
+   }
    .mini-loader {
       padding: .5rem 1rem;
    }
