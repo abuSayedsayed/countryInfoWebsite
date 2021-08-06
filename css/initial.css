@@ -17,7 +17,7 @@ html {
    scroll-behavior: smooth;
 }
 
-body {}
+
 .loader-bg{
    height: 40vh;
    display: flex;
@@ -101,7 +101,7 @@ h1:select {
 
 /*this css used for slider*/
 .carousel-item {
-   min-height: 35vh !important;
+   min-height: 85vh !important;
    position: relative !important;
    overflow: hidden;
 }
@@ -218,9 +218,7 @@ h1:select {
 
 }
 
-#more-about-countries {
 
-}
 .explore-heading {
    font-size: 3rem;
    color: #eb2646;
@@ -238,7 +236,7 @@ h1:select {
 
 
 
-tr {}
+
 
 td {
    text-align: left;
@@ -371,14 +369,7 @@ td:nth-child(even) {
       font-size: 2rem;
    }
 
-   .carousel-item {
-      -webkit-object-fit: fill !important;
-   }
 
-   .carousel-item img {
-      -webkit-object-fit: fill !important;
-
-   }
 
    .carousel-caption {
       top: 40%;
